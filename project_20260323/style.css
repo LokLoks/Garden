@@ -1,0 +1,13 @@
+
+
+css
+@charset "utf-8";
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/bg03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+}

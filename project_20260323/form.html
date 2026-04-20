@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="image/flower.ico" type="image/x-icon">
+<title>Enquire  Form</title>
+
+<style type="text/css">
+body,td,th {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-size: 15px;
+    color: #6A6A6A;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/bg03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+}
+
+body table {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+body p {
+	text-align: center;
+	color: #2F064E;
+	font-size: x-large;
+}
+a:active {
+		color:blueviolet;
+	}	
+a:link {
+		color: blue;
+	}
+a:hover {
+		color:coral;
+		text-decoration: underline;
+	}
+a {
+	font-size: 35px;	
+	text-decoration: none;
+	}
+input#file-input {
+    display: none;
+  }
+input[type="file"] + label {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #310de7;
+    color: white;
+    border-radius: 5px;
+    font-weight: 800;
+} 
+input[type="file"] + label:hover {
+    background-color: #fa0068;
+}
+input[type="text"]{
+    width: 400px;
+    padding: 6px;
+    background-color: #f7f7f7;
+    border: none;
+}
+textarea {
+    width: 400px;
+    padding: 6px;
+    background-color: #f7f7f7;
+    border: none;
+}
+.btn_style01 {
+            width: 80px;          
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+
+            padding: 6px;
+            background: #e01ba5;
+            border: none;
+            color: white;
+           
+            font-weight: 800;
+        }
+        .btn_style01:hover {
+          background: #505050;
+          
+        }
+         .btn_style02 {
+            width: 80px;          
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            padding: 6px;
+            background: #039837;
+            border: none;
+            color: white;
+            font-weight: 800;
+        }
+        .btn_style02:hover {
+          background: #fa0068;
+        }    
+</style>
+
+</head>
+<body><table width="1200" border="0" align="center">
+  <tbody>
+    <tr style="text-align: center">
+     <td colspan="5">
+      <img src="image/1200x300_01.png" alt="banner" width="1200" >
+  </td>
+        <tr>
+      <td width="242" bgcolor="#ffffff"><a href="index.html">Home</a></td>
+      <td width="243" bgcolor="#ffffff" ><a href="gallery.html">Gallery</a></td>
+      <td width="243" bgcolor="#ffffff"><a href="video.html">Video</a></td>
+      <td width="243" bgcolor="#ffffff"><a href="form.html">Form</a></td>
+	  <td width="243" bgcolor="#ffffff"><a href="contactus.html">Contact Us</a></td>
+    </tr>
+   
+  </tbody>
+</table>
+<br>
+	<form method="post" enctype="multipart/form-data">
+	<table width="1200" border="5" cellspacing="5" cellpadding="5" align="center">
+  <tbody>
+    <tr>
+      <td colspan="2"><p>Enquire  Form</p></td>
+      </tr>
+    <tr>
+      <td width="380"><br>
+<label><p>First Name</p></label>
+        &nbsp;</td>
+      <td width="814"><br>
+ &nbsp;&nbsp;&nbsp;<input type="text" placeholder="First Name" size="50"maxlength="100"><br><br>          
+      </td>
+    </tr>
+    <tr>
+      <td><p>Telephone Number</p></td>
+      <td>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Telephone Number" size="50" maxlength="100"></td>
+    </tr>
+    <tr>
+      <td><p>E-mail</p></td>
+      <td>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="E-mail" size="50" maxlength="100"></td>
+    </tr>
+    <tr>
+      <td><label><p>Upload File</p></label></td>
+      <td>
+      &nbsp;&nbsp;&nbsp;<input type="file"  name="fileField" id="file-input">
+      <label for="file-input">Choose File</label>
+      </td>
+    </tr>
+    <tr>
+      <td><label><p>Message</p></label>&nbsp;</td>
+      <td><br>&nbsp;&nbsp;
+        &nbsp;<textarea cols="47" rows="10" maxlength="100"></textarea>
+        <br>
+        <br>
+        </td>
+    </tr>
+    <tr>
+      <td height="45">&nbsp;</td>
+      <td><input type="Submit" class="btn_style01" formaction="thankyou.html" formtarget="_blank" value="Submit">
+        
+		 <input type="reset" class="btn_style02" value="Reset"></td>
+		 </td>
+    </tr>
+  </tbody>
+</table>
+	
+		
+	</form>
+   
+
+
+</body>
+</html>

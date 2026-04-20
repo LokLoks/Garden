@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片 - A01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #808080;  /* 灰色背景 */
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 返回按鈕 */
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 25px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #555;
+        }
+
+        /* 圖片區域 */
+        .image-area {
+            margin-top: 20px;
+        }
+
+        /* 單張圖片容器 - 上下間隔 1cm */
+        .image-item {
+            margin-bottom: 1cm;  /* 間隔 1 公分 */
+        }
+
+        .image-item:last-child {
+            margin-bottom: 0;    /* 最後一張圖片不需要間隔 */
+        }
+
+        /* 圖片大小縮小一半，並且置中 - 修正版 */
+        .image-item img {
+            width: 50%;           /* 寬度縮小為原來的一半 */
+            height: auto;
+            display: block;       /* 區塊級元素 */
+            margin: 0 auto;       /* 水平自動邊距 = 置中 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="gallery.html" class="back-btn">← Back</a>
+        
+        <div class="image-area">
+            <!-- 第一張圖片 -->
+            <div class="image-item">
+                <img src="image/C01.jpg" alt="A01 圖片">
+            </div>
+            
+            <!-- 第二張圖片（間隔 1cm） -->
+            <div class="image-item">
+                <img src="image/C02.jpg" alt="A02 圖片">
+            </div>
+            
+            <!-- 第三張圖片（間隔 1cm） -->
+            <div class="image-item">
+                <img src="image/C03.jpg" alt="A03 圖片">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
